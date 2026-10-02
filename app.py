@@ -1,7 +1,7 @@
 import random
 import streamlit as st
 
-# FIX: Refactored logic into logic_utils.py using Claude Code agent mode
+# FIX: Refactored logic into logic_utils.py using agent mode
 from logic_utils import get_range_for_difficulty, parse_guess, check_guess, update_score
 
 st.set_page_config(page_title="Glitchy Guesser", page_icon="🎮")

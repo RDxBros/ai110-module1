@@ -8,7 +8,7 @@ Answer each question in 3 to 5 sentences. Be specific and honest about what actu
 - List at least two concrete bugs you noticed at the start  
   (for example: "the hints were backwards").
 
-The game didn't work as intended and was full of bugs. The main bug I noticed is that the hints are reserved so when the guess is too high, it says go higher instead of go lower. The show hint checkbox doesn't change anything.
+The game didn't work as intended and was full of bugs. The main bug I noticed is that the hints were reversed so when the guess was too high, it said to go higher instead of go lower. Another bug was that the difficulty for Hard was 1-50 which made it easier than Normal.
 
 **Bug Reproduction Log**
 
@@ -17,7 +17,7 @@ Document at least 3 bugs you found. Add rows as needed.
 |             Input             | Expected Behavior  | Actual Behavior     | Console Output / Error           |
 |-------------------------------|--------------------|---------------------|----------------------------------|
 |Secret is 50, guess is 80      |Hint says "Go LOWER"|Hint says "Go HIGHER"|Returned opposite                 |
-|Secret is 10, guess is 9       |Outcome is "Too Low"|Outcome is "Too High"|Returned opposite                 |
+|Playing level hard             |Difficulty 1-200    |Difficulty 1-50      |Easier than level Normal          |
 |Win/lose then click "New Game" |A fresh game starts |Says "Game Over"     |Status is never reset to "playing"|
 
 ---

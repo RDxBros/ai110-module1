@@ -29,15 +29,18 @@ It wrote the code, ran away, and now the game is unplayable.
 - [ ] Detail which bugs you found.
 - [ ] Explain what fixes you applied.
 
+The game's purpose is to guess a randomly generated number from a range within a number of tries based on the difficulty level. You get a hint for every incorrect guess. The biggest bug was the hints being backwards so for ex, inputting a higher number returned "Too Low". I fixed it by making the returns accurate so inputting a higher number returned "Too High". Another bug was that the difficulty for Hard was 1-50 which made it easier than Normal so I changed the range to 1-200.
+
 ## 📸 Demo Walkthrough
 
 Describe your fixed game in numbered steps so a reader can follow along without watching a video:
 
-1. <!-- Describe this step -->
-2. <!-- Describe this step -->
-3. <!-- Describe this step -->
-4. <!-- Describe this step -->
-5. <!-- Add more steps as needed -->
+1. User enters guess of 20
+2. Game returns "Too High"
+3. User enters guess of 10
+4. Game returns "Too low"
+5. Score updates after each guess
+6. Game ends after correct guess
 
 **Screenshot** *(optional)*: <!-- Insert a screenshot of your fixed, winning game here -->
 
